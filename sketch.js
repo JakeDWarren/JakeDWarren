@@ -7,7 +7,7 @@ var result;
 //Loads any related data or media files
 function preload() {
     console.log(postcode);
-    let url = "http://api.postcodes.io/postcodes/";
+    let url = "https://api.postcodes.io/postcodes/";
     result = loadJSON(url+postcode);//The URL is sent to the loadJSON that returns the data to the result variable
     console.log(result);
 }
@@ -16,7 +16,7 @@ function setup() {
   //var canvas  = createCanvas(1280, 720); //Canvas size defined
   //canvas.parent("JavaContent");
   //<div id="JavaContent"></div>
-  loadImage("assets/UKMap.png", function(backmap){
+  loadImage("assets/UKMAP.png", function(backmap){
     image(backmap,0,0,500,666)
   });
 
